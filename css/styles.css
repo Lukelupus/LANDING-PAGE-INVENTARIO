@@ -572,7 +572,9 @@ a:visited {
     align-items: center;
     justify-content: center;
   }
-
+  .map {
+  width: 75%;
+  }
   .pricing-title {
     padding: 70px 0px;
   }
