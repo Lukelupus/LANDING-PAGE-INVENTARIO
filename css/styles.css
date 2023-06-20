@@ -29,6 +29,25 @@ nav {
 
 .container-fluid {
   padding: 0;
+
+}
+
+.cta-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.cta-buttons .btn {
+  width: 25%;
 }
 
 #header-text-nav-container {
@@ -70,6 +89,8 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid #f1d67f;
+  border-top: 1px solid #f1d67f;
 }
 
 .white-section {
@@ -195,6 +216,21 @@ ul {
 
 li {
   margin-bottom: 10px;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #050e1f;
+}
+
+a:visited {
+  text-decoration: inherit;
+
 }
 
 
@@ -378,28 +414,55 @@ li {
 
 /* Call to Action */
 .cta-heading {
-  font-family: 'Montserrat';
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 3.0rem;
   line-height: 1.5;
   font-weight: bold;
-  color: #fff;
-  margin-bottom: 60px;
+  color: #111929;
+  margin: 60px;
 }
 
 .btn-cta {
-  margin: 0 15px;
-  font-family: 'Montserrat';
+  color: #111929;
+ border: solid 1px #050e1f;;
+}
+
+.btn-cta:hover {
+  color: #050e1f;
+ border: solid 1px #050e1f;
+ background-color: #f1d67f;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   background-color: #050e1f;
-  color: #f1d67f;
+  color: #ffff;
+  border: 1px solid #f1d67f;
+  
 
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+  padding: 7% 15%;
+}
+.card-escritorio {
+  color: #f1d67f;
+}
+
+.card-body {
+  font-weight: 400;
+}
+
+.card-title {
+  color: #f1d67f;
+  font-size: 26px;
 }
 .card-row {
   width: 50%;
+  gap: 2em;
 }
 
 /* Footer */
@@ -410,9 +473,72 @@ li {
 .Copyright {
   margin-bottom: 0;
 }
+#footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.creditos {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
 
 .footer-logo {
   margin: 0 1% 3%;
+  color: #f1d67f;
+ 
+}
+
+.footer-logo .fab {
+  cursor: pointer;
+}
+.footer-logo:hover {
+  cursor: pointer;
+  color: #ffff
+}
+
+.footer-logo {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-logo .Copyright {
+  display: inline-block;
+  width: fit-content;
+ 
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 5%;
+  margin-top: 30px;
+  background-color: #050e1f;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  transform: scale(1.6);
+  padding: 10px 20px;
+}
+
+.whatsapp-icon {
+  position: relative;
+  right: 70%;
+  bottom: 15%;
+}
+.whatsapp-icon:hover {
+  color: #f1d67f;
+ 
+}
+
+.whatsapp-float:hover {
+  box-shadow: 2px 2px 3px #f1d67f;
 }
 
 /* media query  pode alterar o 'viewport' que é o que vc vê na tela. Isso é bom pra ajeitar pra celular*/
