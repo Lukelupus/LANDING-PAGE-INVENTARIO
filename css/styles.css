@@ -564,6 +564,8 @@ a:visited {
     text-align: center;
   }
 
+ 
+
   .head-img {
     display: none;
   }
@@ -608,7 +610,10 @@ width: 90%;
   }
 
   .inventario-bottom-mobile {
-    width: 80%;
+   font-weight: 400;
+   white-space: break-spaces;
+   font-size: 1.55rem;
+   line-height: 2;
   }
 
   .cards {
