@@ -550,7 +550,10 @@ a:visited {
   color: #f1d67f;
  
 }
+.cta-fazer:hover {
 
+  color:#fff ;
+}
 .whatsapp-float:hover {
   box-shadow: 2px 2px 3px #f1d67f;
 }
